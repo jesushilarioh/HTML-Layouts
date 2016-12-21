@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORM #SAMPLES</title>
+    </head>
+
+    <!-- CSS Stylesheet -->
+    <style media="screen">
+        header {
+            text-align: center;
+        }
+        form {
+            /* To center the form on the page */
+            margin: 0 auto;
+            width: 450px;
+            /* To see outline of the form */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        body section + section {
+            /* To add space between each widget form */
+            margin-top: 1em;
+        }
+
+    </style>
+    <body>
+
+        <!-- Sample #1 -->
+        <section>
+            <!-- Sample #1 Header -->
+            <header>
+                <h2>SAMPLE FORM #1</h2>
+            </header>
+
+            <!-- Sample #1 -->
+            <form>
+                <fieldset>
+                    <legend>Fruit juice size</legend>
+                        <p>
+                            <input type="radio" name="size" id="size_1" value="small" />
+                            <label for="size_1">Small</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="size" id="size_2" value="medium" />
+                            <label for="size_2">Medium</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="size" id="size_3" value="large" />
+                            <label for="size_3">Large</label>
+                        </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Sample #2 -->
+        <section>
+            <!-- Sample #2 Header -->
+            <header>
+                <h2>SAMPLE FORM #2</h2>
+            </header>
+
+        <form>
+            <p>
+<input type="checkbox" id="taste_1" name="taste_cherry" value="1">
+                <label for="taste_1">
+
+                    I like cherry
+                </label>
+            </p>
+            <p>
+                <input type="checkbox" id="taste_2" name="taste_banana" value="1">
+                <label for="taste_2">
+
+                    I like banana
+                </label>
+            </p>
+        </form>
+        </section>
+
+        <!-- Sample #3 -->
+        <section>
+            <!-- Sample #3 Header -->
+            <header>
+                <h2>SAMPLE FORM #3</h2>
+            </header>
+
+            <form>
+                <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+
+                <!-- when the thing you are labeling is a descendant of the label, it is not necessary to use the 'for' attribute on the label. -->
+                <!-- So this: -->
+                <label>
+                    <span>Name: </span>
+                    <input type="text" name="username" required />
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+
+                <!-- is the same as this: -->
+                <div>
+                    <label for="username">Name: </label>
+                    <input id="username" type="text" name="username" required />
+                    <strong><abbr title="required">*</abbr></strong>
+                </div>
+
+                <p>
+                    <label for="birth"> <!-- so here, the 'for' attribute is redundant. -->
+                        <span>Date of birth: </span>
+                        <input type="text" id="birth" name="userbirth" maxlength="10" /> <em>formated as mm/dd/yyyy</em>
+                    </label>
+                </p>
+            </form>
+        </section>
+
+    </body>
+</html>
