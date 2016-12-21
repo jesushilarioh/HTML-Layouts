@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORM #1</title>
+
+        <!-- CSS Stylesheet -->
+        <!-- <style media="screen">
+
+        header {
+            /* Center Header Txt */
+            text-align: center;
+        }
+        form {
+            /* To center the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            /* To see outline of the form */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        form div + div {
+            /* To add space between each widget form */
+            margin-top: 1em;
+        }
+        label {
+            /* To make sure all labels are aligned and have same size */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            /* To make sure all text fields have same font settings
+               By default, textareas have a monospace font */
+            font: 1em sans-serif;
+
+            /* To give same size to all text fields */
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            /* To harmonize look & feel of text field border */
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus {
+            /* To give a little highlight on active elements */
+            border-color: #000;
+        }
+        textarea {
+            /* To properly align multiline text fields with labels */
+            vertical-align: top;
+
+            /* To give enough room to type some text */
+            height: 5em;
+
+            /* To allow users to resize textarea vertically
+               It does not work on all browsers */
+            resize: vertical;
+        }
+        .button {
+            /* To position buttons to same position of text fields */
+            padding-left: 90px; /* Same size as label elements */
+        }
+        button {
+            /* This extra margin represents roughly same space as
+               between the labels and their text fields */
+            margin-left: .5em;
+        }
+    </style> -->
+
+    </head>
+    <body>
+        <!-- FORM #1 -->
+        <section>
+            <!-- Form #1 Header -->
+            <header>
+                <h2>FORM #1</h2>
+            </header>
+
+            <!-- actual form -->
+            <form>
+                <!-- Name input-->
+                <div class="">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="user_name">
+                </div>
+                <!-- Email input -->
+                <div class="">
+                    <label for="mail">E-mail:</label>
+                    <input id="mail" type="email" name="user_mail">
+                </div>
+                <!-- Message input -->
+                <div class="">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" rows="8" cols="80"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="">
+                    <button type="submit">Send your message</button>
+                </div>
+            </form> <!-- Form End-->
+
+        </section> <!-- Section End-->
+    </body>
+</html>
+
+
+<form>
+  <fieldset>
+    <legend>Fruit juice size</legend>
+        <p>
+            <input type="radio" name="size" id="size_1" value="small" />
+            <label for="size_1">Small</label>
+        </p>
+        <p>
+            <input type="radio" name="size" id="size_2" value="medium" />
+            <label for="size_2">Medium</label>
+        </p>
+        <p>
+            <input type="radio" name="size" id="size_3" value="large" />
+            <label for="size_3">Large</label>
+        </p>
+    </fieldset>
+</form>
+
+<form>
+  <p>
+
+    <label for="taste_1">
+        <input type="checkbox" id="taste_1" name="taste_cherry" value="1">
+        I like cherry
+    </label>
+  </p>
+  <p>
+    <label for="taste_2">
+        <input type="checkbox" id="taste_2" name="taste_banana" value="1">
+        I like banana
+    </label>
+  </p>
+</form>
