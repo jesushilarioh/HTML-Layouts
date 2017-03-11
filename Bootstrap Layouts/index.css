@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+/* IDs */
+#wrapper {
+    background-color: black;
+    color: black;
+}
+#header {
+    background-color: rgb(227, 110, 91);
+
+}
+#navbar {
+    background-color: rgb(217, 167, 69);
+}
+#sectionMain {
+    text-align: center;
+}
+#section {
+    background-color: rgb(11, 152, 17);
+}
+#asideText {
+    color: yellow;
+}
+#footer {
+    background-color: rgb(80, 81, 235);
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+/* Classes */
