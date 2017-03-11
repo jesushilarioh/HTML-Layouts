@@ -58,15 +58,15 @@ body {
     height: 100px;
     padding-top: 35px;
 }
-#footerModal {
-
+#address {
+    padding: 15px 0 20px 20px;
+    text-align: right;
 }
 /* Classes */
 .modal-body {
     text-align: left;
     white-space: nowrap;
-    overflow: scroll;
-
+    overflow-y: auto;
 }
 .modal-content {
     background-color: rgba(227, 110, 91, .1);
@@ -78,10 +78,22 @@ body {
 }
 .modal-header {
     border-style: none;
+    padding-top: 25px;
+    text-shadow: 1px 2px 2px black;
+
 }
 .modal-footer {
     border-style: none;
+
 }
-.close {
-    
+.closeButton {
+    background-color: rgba(227, 110, 91, .2);
+    color: white;
+    border-style: none;
+}
+.closeButton:hover {
+    background-color: rgba(180, 97, 0, .5);
+}
+.modal {
+    background-color: rgba(0, 0, 0, .7);
 }
