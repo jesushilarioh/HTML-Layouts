@@ -42,6 +42,10 @@ body {
     color: white;
     margin: 10px 0 10px 0;
 }
+#footer:hover {
+    cursor: pointer;
+
+}
 #article {
     background-color: rgb(57, 199, 251);
     margin: 0 20px 20px 20px;
@@ -54,4 +58,30 @@ body {
     height: 100px;
     padding-top: 35px;
 }
+#footerModal {
+
+}
 /* Classes */
+.modal-body {
+    text-align: left;
+    white-space: nowrap;
+    overflow: scroll;
+
+}
+.modal-content {
+    background-color: rgba(227, 110, 91, .1);
+    color: white;
+    border-style: none;
+}
+.prettyprint {
+    border: none;
+}
+.modal-header {
+    border-style: none;
+}
+.modal-footer {
+    border-style: none;
+}
+.close {
+    
+}
