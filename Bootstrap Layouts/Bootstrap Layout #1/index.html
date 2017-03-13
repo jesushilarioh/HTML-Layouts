@@ -77,21 +77,29 @@
                             </div>
                         </div>
                         <!-- /article2 / aside2 -->
+
                         <!-- article3 / aside3 -->
                         <div class="row">
+                            <!-- article No.3 -->
                             <div class="col-sm-8">
                                 <div id="article">
                                     <h2 id="articleText">Article No.3</h2>
                                 </div>
                             </div>
+                            <!-- /article No.3 -->
 
-                            <div class="col-sm-4">
-                                <div id="aside">
-                                    <h2 id="asideText">Aside No.3</h2>
+                            <!-- aside No.3-->
+                            <div data-toggle="modal" data-target="#article3Modal">
+                                <div class="col-sm-4">
+                                    <div id="aside">
+                                        <h2 id="asideText">Aside No.3</h2>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /aside No.3-->
                         </div>
                         <!-- /article3 / aside3 -->
+
                     </div>
                 </div>
             </div>
@@ -120,6 +128,43 @@
         </div>
         <!--/address -->
 
+
+        <!-- aside No.3 Modal-->
+        <div class="modal fade" id="article3Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Aside No.3 HTML Code</h3>
+                    </div>
+                    <div class="modal-body">
+                        <pre class="prettyprint">
+
+&lt;!-- aside No.3--&gt;
+&lt;div data-toggle=&quot;modal&quot; data-target=&quot;#article3Modal&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div id=&quot;aside&quot;&gt;
+            &lt;h2 id=&quot;asideText&quot;&gt;Aside No.3&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /aside No.3--&gt;
+
+                        </pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /aside No.3 Modal -->
+
+
+
+
+
+
         <!-- Footer Modal -->
         <div class="modal fade" id="footerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg" role="document">
@@ -138,7 +183,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- /Footer --&gt;                            
+&lt;!-- /Footer --&gt;
                         </pre>
                     </div>
                     <div class="modal-footer">
