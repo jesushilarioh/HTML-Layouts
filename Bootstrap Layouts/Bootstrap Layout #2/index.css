@@ -1,34 +1,53 @@
 * {
-    text-align: center;
+
     color: white;
-    font-family: 'Roboto', sans-serif;
+
 }
 body {
     background-color: #DDDDDD;
+}
+#headerStyle:hover {
+    cursor: pointer;
+    background-color: rgb(190, 0, 0);
 }
 #headerStyle {
     background-color: #E1132A;
     padding: 20px;
     margin: 10px 10px 0 10px;
 }
+#navbarStyle:hover {
+    cursor: pointer;
+    background-color: rgb(199, 101, 0);
+}
 #navbarStyle {
     background-color: #F38F2D;
     padding: 20px;
     margin: 10px 10px 0 10px;
+}
+#mainStyle:hover {
+    cursor: pointer;
+    background-color: rgb(191, 138, 0);
 }
 #mainStyle {
     background-color: #FFC000;
     padding: 20px 20px 20px 20px;
     margin: -10px 10px 20px 10px;
 }
+#asideStyle:hover {
+    cursor: pointer;
+    background-color: rgb(15, 74, 122);
+}
 #asideStyle {
     background-color: #0173B9;
     padding: 20px 10px 100px 0;
     margin: -9px 10px 10px 10px;
     height: 426px;
-
 }
-#article {
+.article:hover {
+    cursor: pointer;
+    background-color: rgb(48, 136, 51);
+}
+.article {
     background-color: #7AC141;
     padding: 25px;
     margin: 10px;
@@ -37,8 +56,53 @@ body {
     padding: 20px;
     margin: 10px;
 }
+#footerStyle:hover {
+    background-color: rgb(74, 21, 91);
+    cursor: pointer;
+}
 #footerStyle {
     background-color: #902C8C;
     padding: 20px;
     margin: 0 10px 10px 10px;
+}
+.modal-body {
+    text-align: left;
+    white-space: nowrap;
+    overflow-y: auto;
+}
+.modal-content {
+    background-color: rgba(227, 110, 91, .1);
+    color: white;
+    border-style: none;
+}
+.prettyprint {
+    border: none;
+    font-weight: bold;
+}
+.modal-header {
+    border-style: none;
+    padding-top: 25px;
+    text-shadow: 1px 2px 2px black;
+}
+.modal-footer {
+    border-style: none;
+}
+h1 {
+
+    text-align: center;
+
+}
+.closeButton {
+    background-color: rgba(227, 110, 91, .2);
+    color: white;
+    border-style: none;
+}
+.closeButton:hover {
+    background-color: rgba(180, 97, 0, .5);
+}
+.modal {
+    background-color: rgba(0, 0, 0, .7);
+}
+#myModalLabel {
+    text-align: center;
 }
