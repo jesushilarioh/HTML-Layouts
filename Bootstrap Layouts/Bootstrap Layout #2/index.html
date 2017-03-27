@@ -39,25 +39,26 @@
 
                 <!-- Section -->
                 <div class="col-sm-8">
-                    <div id="mainStyle">
-                        <div id="sectionTitle">
+                    <div id="sectionStyle" >
+                        <div id="sectionTitle" data-toggle="modal" data-target="#sectionModal">
                             <h1>Section</h1>
                         </div>
-                        <!-- Article 1 -->
-                        <div class="article">
+                        <!-- Article -->
+                        <div class="article" data-toggle="modal" data-target="#articleModal">
                             <h1>Article</h1>
                         </div>
-                        <!-- /Article 1 -->
-                        <!-- Article 2 -->
-                        <div class="article">
+                        <!-- /Article -->
+                        <!-- Article -->
+                        <div class="article" data-toggle="modal" data-target="#articleModal">
                             <h1>Article</h1>
                         </div>
-                        <!-- /Article 2 -->
+                        <!-- /Article -->
                     </div>
                 </div>
                 <!-- /Section -->
+
                 <!-- Aside-->
-                <div class="col-sm-4" id="aside">
+                <div class="col-sm-4" data-toggle="modal" data-target="#asideModal">
                     <div id="asideStyle">
                         <h1>Aside</h1>
                     </div>
@@ -78,6 +79,144 @@
             <!-- /Footer -->
         </div>
 
+
+
+
+        <!-- Section-->
+        <div class="modal fade" id="sectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Section</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HTML</h3>
+                        <pre class="prettyprint">
+&lt;!-- Section --&gt;
+&lt;div class="col-sm-8"&gt;
+    &lt;div id="sectionStyle"&gt;
+        &lt;div id="sectionTitle" data-toggle="modal" data-target="#sectionModal"&gt;
+            &lt;h1&gt;Section&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;!-- Article --&gt;
+        &lt;div class="article" data-toggle="modal" data-target="#articleModal"&gt;
+            &lt;h1&gt;Article&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;!-- /Article --&gt;
+        &lt;!-- Article --&gt;
+            &lt;div class="article" data-toggle="modal" data-target="#articleModal"&gt;
+                &lt;h1&gt;Article&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;!-- /Article --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Section --&gt;</pre>
+                        <h3>CSS</h3>
+                        <pre class="prettyprint">
+#sectionTitle:hover {
+    color: rgb(50, 39, 0);
+}
+#sectionStyle:hover {
+    cursor: pointer;
+    background-color: rgb(191, 138, 0);
+}
+#sectionStyle {
+    background-color: #FFC000;
+    padding: 20px 20px 20px 20px;
+    margin: -10px 10px 20px 10px;
+}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Section -->
+
+
+
+
+
+
+
+
+        <!-- Article -->
+        <div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Article</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HTML</h3>
+                        <pre class="prettyprint">
+&lt;!-- Article --&gt;
+&lt;div class="article" data-toggle="modal" data-target="#footerModal"&gt;
+    &lt;h1&gt;Article&lt;/h1&gt;
+&lt;/div&gt;
+&lt;!-- /Article --&gt;</pre>
+                        <h3>CSS</h3>
+                        <pre class="prettyprint">
+.article:hover {
+    cursor: pointer;
+    background-color: rgb(48, 136, 51);
+}
+.article {
+    background-color: #7AC141;
+    padding: 25px;
+    margin: 10px;
+}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Article -->
+
+        <!-- Aside -->
+        <div class="modal fade" id="asideModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Aside</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HTML</h3>
+                        <pre class="prettyprint">
+&lt;!-- Aside--&gt;
+&lt;div class="col-sm-4" data-toggle="modal" data-target="#asideModal"&gt;
+    &lt;div id="asideStyle"&gt;
+        &lt;h1&gt;Aside&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Aside --&gt;</pre>
+                        <h3>CSS</h3>
+                        <pre class="prettyprint">
+#asideStyle:hover {
+    cursor: pointer;
+    background-color: rgb(15, 74, 122);
+}
+#asideStyle {
+    background-color: #0173B9;
+    padding: 20px 10px 100px 0;
+    margin: -9px 10px 10px 10px;
+    height: 426px;
+}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Aside -->
+
         <!-- Footer Modal -->
         <div class="modal fade" id="footerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg" role="document">
@@ -97,8 +236,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- /Footer --&gt;
-                        </pre>
+&lt;!-- /Footer --&gt;</pre>
                         <h3>CSS</h3>
                         <pre class="prettyprint">
 #footerStyle:hover {
@@ -109,8 +247,7 @@
     background-color: #902C8C;
     padding: 20px;
     margin: 0 10px 10px 10px;
-}
-                        </pre>
+}</pre>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
@@ -119,13 +256,6 @@
             </div>
         </div>
         <!-- /Footer Modal -->
-
-
-
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
