@@ -15,7 +15,7 @@
 
         <div class="container">
             <!-- Header -->
-            <div class="row header">
+            <div class="row header" data-toggle="modal" data-target="#headerModal">
                 <div class="col-sm-12">
                     <div id="headerStyle">
                         <h1>Header</h1>
@@ -25,7 +25,7 @@
             <!-- /Header -->
 
             <!-- Navbar -->
-            <div class="row navbar">
+            <div class="row navbar" data-toggle="modal" data-target="#navbarModal">
                 <div class="col-sm-12">
                     <div id="navbarStyle">
                         <h1>Nav</h1>
@@ -77,10 +77,106 @@
                 </div>
             </div>
             <!-- /Footer -->
+
+            <!-- Footer Address -->
+            <div class="">
+                <div class="row" id="address">
+                    <div class="footer col-md-12">
+                        <h5>Created by <strong><a href="https://twitter.com/jesushilarioh" class="addressLinks" target="_blank">Jesus Hilario Hernandez</a></strong>. View project on <strong><a href="https://github.com/jesushilarioh/HTML-Layouts/tree/master/Bootstrap%20Layouts/Bootstrap%20Layout%20%232" class="addressLinks" target="_blank"> Github</a></strong>.</h5>
+                    </div>
+                 </div>
+            </div>
+            <!--/Footer Address -->
         </div>
 
 
 
+
+
+        <!-- Header -->
+        <div class="modal fade" id="headerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Header</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HTML</h3>
+                        <pre class="prettyprint">
+&lt;!-- Header --&gt;
+&lt;div class="row header" data-toggle="modal" data-target="#headerModal"&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;div id="headerStyle"&gt;
+            &lt;h1&gt;Header&lt;/h1&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Header --&gt;</pre>
+                        <h3>CSS</h3>
+                        <pre class="prettyprint">
+#headerStyle:hover {
+    cursor: pointer;
+    background-color: rgb(190, 0, 0);
+}
+#headerStyle {
+    background-color: #E1132A;
+    padding: 20px;
+    margin: 10px 10px 0 10px;
+}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+
+
+
+
+
+
+        <!-- Navbar -->
+        <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Nav</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3>HTML</h3>
+                        <pre class="prettyprint">
+&lt;!-- Navbar --&gt;
+&lt;div class="row navbar" data-toggle="modal" data-target="#navbarModal"&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;div id="navbarStyle"&gt;
+            &lt;h1&gt;Nav&lt;/h1&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Navbar --&gt;</pre>
+                        <h3>CSS</h3>
+                        <pre class="prettyprint">
+#navbarStyle:hover {
+    cursor: pointer;
+    background-color: rgb(199, 101, 0);
+}
+#navbarStyle {
+    background-color: #F38F2D;
+    padding: 20px;
+    margin: 10px 10px 0 10px;
+}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Navbar -->
 
         <!-- Section-->
         <div class="modal fade" id="sectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -134,13 +230,6 @@
             </div>
         </div>
         <!-- /Section -->
-
-
-
-
-
-
-
 
         <!-- Article -->
         <div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

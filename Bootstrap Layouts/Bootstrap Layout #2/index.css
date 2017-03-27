@@ -1,7 +1,5 @@
 * {
-
     color: white;
-
 }
 body {
     background-color: #DDDDDD;
@@ -25,7 +23,7 @@ body {
     margin: 10px 10px 0 10px;
 }
 #sectionTitle:hover {
-    
+
     background-color: rgb(125, 91, 2);
 }
 #sectionStyle:hover {
@@ -109,4 +107,11 @@ h1 {
 }
 #myModalLabel {
     text-align: center;
+}
+#address {
+    padding-bottom: 10px;
+    text-align: right;
+}
+h5 {
+    color: rgb(34, 34, 32);
 }

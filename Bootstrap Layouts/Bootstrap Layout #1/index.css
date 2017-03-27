@@ -58,6 +58,7 @@ body {
     background-color: rgb(0, 59, 136);
 }
 #address {
+    color: white;
     padding: 10px 0 20px 20px;
     text-align: right;
 }
@@ -89,7 +90,6 @@ body {
 }
 .addressLinks {
     color: black;
-    text-shadow: 1px 1px 2px white;
 }
 .modal-body {
     text-align: left;
