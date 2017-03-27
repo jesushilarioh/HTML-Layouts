@@ -1,0 +1,142 @@
+body {
+    background-color: #535F5F;
+    padding: 20px;
+}
+.container {
+    background-color: #92BFC6;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+}
+.page-header {
+    background-color: #DDF9FF;
+    height: 150px;
+    border-radius: 10px;
+}
+header {
+    background-color: #DDF9FF;
+    margin: 10px 0 0 0;
+    padding: 20px 0 15px 10px;
+    border-radius: 10px;
+}
+#header-right {
+    margin: 10px 0 0 0;
+    padding: 25px 0 20px 10px;
+
+}
+.navbar {
+    margin: 10px 0;
+    background-color: #D7FBDC;
+    border-radius: 10px;
+}
+section {
+    background-color: #DEE9EB;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.section1 {
+    padding: 25px 10px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #E4D5F8;
+    border-radius: 10px;
+}
+.footer1 {
+    padding: 15px 10px 10px 10px;
+    margin: 0 0 5px 0;
+    border-radius: 10px;
+}
+article {
+    background-color: #B6ECF7;
+    padding: 10px 8px 3px 8px;
+    border-radius: 10px;
+}
+#aside1 {
+    margin: 10px 0;
+    background-color: #F9E6FC;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.articleAside {
+    margin: 10px 15px 10px 10px;
+}
+#articleAside1 {
+    margin: 0 15px 0 10px;
+    padding-bottom: 50px;
+}
+#rightAside {
+    padding: 10px 0 0 19px;
+}
+.section2 {
+    padding: 10px 10px 5px 10px;
+}
+#footer2{
+    padding: 5px 10px 3px 10px;
+    margin-bottom: 5px;
+}
+.article2 {
+    padding-left: 11px;
+
+}
+#aside2 {
+    background-color: #F9E6FC;
+    margin: 10px 0;
+    padding-bottom: 98px;
+    border-radius: 10px;
+}
+#article-2 {
+    margin: 10px 0;
+}
+#aside3 {
+    padding: 10px 0 0 20px;
+    border-radius: 10px;
+}
+#aside3Text {
+
+}
+#footer-bottom:hover {
+    cursor: pointer;
+    background-color: rgb(244, 201, 255);
+}
+#footer-bottom {
+    padding: 20px 10px;
+}
+.navbar-brand {
+    padding-left: 5px;
+}
+#articleAside1Text {
+    padding-left: 10px;
+}
+.closeButton {
+    background-color: rgba(227, 110, 91, .2);
+    color: white;
+    border-style: none;
+}
+.closeButton:hover {
+    background-color: rgba(180, 97, 0, .5);
+}
+.modal {
+    background-color: rgba(0, 0, 0, .7);
+}
+.modal-body {
+    text-align: left;
+    white-space: nowrap;
+    overflow-y: auto;
+}
+.modal-content {
+    background-color: rgba(227, 110, 91, .1);
+    color: white;
+    border-style: none;
+}
+.prettyprint {
+    border: none;
+    font-weight: bold;
+}
+.modal-header {
+    border-style: none;
+    padding-top: 25px;
+    text-shadow: 1px 2px 2px black;
+}
+.modal-footer {
+    border-style: none;
+}
